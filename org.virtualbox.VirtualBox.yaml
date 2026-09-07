@@ -73,6 +73,9 @@ modules:
           project-id: 14449
           stable-only: true
           url-template: https://download.virtualbox.org/virtualbox/$version/VirtualBox-$version.tar.bz2
+      - type: patch 
+        paths:
+          - 0000-gsoap.patch
       - type: git
         url: https://github.com/cyberus-technology/virtualbox-kvm.git
         tag: dev-20260201
