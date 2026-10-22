@@ -66,8 +66,8 @@ modules:
         done
     sources:
       - type: archive
-        url: https://download.virtualbox.org/virtualbox/7.2.8/VirtualBox-7.2.8.tar.bz2
-        sha256: 0642ed4a12b7204cd30c0abbc2c10c1cc7ad55ce1756a01e86a16d4b6b066592
+        url: https://download.virtualbox.org/virtualbox/7.2.22/VirtualBox-7.2.22.tar.bz2
+        sha256: 440a2b3eeb46e7e992961b70ef24f43e95b3c99fa2ab30aac20b963ef9e91ad7 
         x-checker-data:
           type: anitya
           project-id: 14449
@@ -78,12 +78,12 @@ modules:
           - 0000-gsoap.patch
       - type: git
         url: https://github.com/cyberus-technology/virtualbox-kvm.git
-        tag: dev-20260201
+        tag: dev-20261021
         dest: virtualbox-kvm
         x-checker-data:
           type: git
           tag-pattern: ^dev-([\d]*)$
-        commit: d6acb7e6dd2e8cb4b1294b34cfe8e0d6667dfd72
+        commit: 6c11052483fa1d5cc29d1674c0d4d9c7eb941daa
       - type: file
         path: LocalConfig.kmk
       - type: file
@@ -126,8 +126,8 @@ modules:
           - --enable-samples
         sources:
           - type: archive
-            url: https://downloads.sourceforge.net/gsoap2/gsoap_2.8.142.zip
-            sha256: 6d7196bd6591ec2977474c681e351b4a33eb5c2d64c9e2e6727b004f330b3752
+            url: https://downloads.sourceforge.net/gsoap2/gsoap_2.8.145.zip
+            sha256: 176767e2443f3586048108209d9424a71b0ae7ba2658655878ab513edec1eede
             x-checker-data:
               type: anitya
               stable-only: true
