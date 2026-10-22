@@ -3,6 +3,8 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 * *" # first of every month due to CI artifacts expiring
 name: CI Build Flatpak
 jobs:
   flatpak:
